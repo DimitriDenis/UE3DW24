@@ -1,0 +1,9 @@
+      ## Installation et configuration de Sonar Scanner
+
+      wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.2.2472-linux.zip
+      sudo apt-get -y install unzip
+      unzip sonar-scanner-cli-4.6.2.2472-linux.zip
+      rm sonar-scanner-cli-4.6.2.2472-linux.zip
+      sudo mv sonar-scanner-4.6.2.2472-linux/ /opt/sonar-scanner
+      sudo ln -s /opt/sonar-scanner/bin/sonar-scanner /usr/bin/sonar-scanner
+      sudo echo "sonar.host.url=http://20.101.67.93:9000" > /opt/sonar-scanner/conf/sonar-scanner.properties
